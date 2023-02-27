@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-
+import logo from './lib/components/assets/iconLogo.png';
 function App() {
   return (
     <div className="App">
@@ -11,11 +10,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://openclassrooms.com/fr/paths/516/projects/815/assignment"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React with OpenClassrooms
         </a>
       </header>
     </div>
