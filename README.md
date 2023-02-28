@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/The-algar/OC-P14-REACT-MODALE/blob/fc3f35f36619f06b28ad98a472ca25d36ed11576/src/lib/components/assets/modale.jpg?raw=true" alt="Preview of the Modal component" /></p>
+<p align="center"><img src="https://github.com/The-algar/OC-P14-REACT-MODALE/blob/fc3f35f36619f06b28ad98a472ca25d36ed11576/src/lib/components/assets/modale.JPG?raw=true" alt="Preview of the Modal component" /></p>
 
 # React Modal: A Simple and Customizable Component with Animation
 
