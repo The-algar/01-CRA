@@ -1,24 +1,40 @@
-import './App.css';
-import logo from './lib/components/assets/iconLogo.png';
+// import logo from './lib/components/assets/iconLogo.png';
+import Logo from './lib/components/Logo';
+import styled from 'styled-components';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <AppWrapper>
+      <AppHeader>
+        <Logo alt="logo" /> {/* width={100} height={100}  */}
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          A simple react component modal with custom layout and animation.
         </p>
-        <a
-          className="App-link"
-          href="https://openclassrooms.com/fr/paths/516/projects/815/assignment"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with OpenClassrooms
-        </a>
-      </header>
-    </div>
+          <AppLink href="https://openclassrooms.com/fr/dashboard/paths#path-516" target="_blank" rel="noopener noreferrer">
+          I learned React with OpenClassrooms'<br /> "Application Developer - JavaScript React" training
+          </AppLink>
+      </AppHeader>
+    </AppWrapper>
   );
 }
 
 export default App;
+
+const AppWrapper = styled.div`
+  text-align: center;
+`;
+
+const AppHeader = styled.header`
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+`;
+
+const AppLink = styled.a`
+  color: #61dafb;
+`;
