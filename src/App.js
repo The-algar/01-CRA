@@ -1,4 +1,3 @@
-// import logo from './lib/components/assets/iconLogo.png';
 import Logo from './lib/components/Logo';
 import styled from 'styled-components';
 
