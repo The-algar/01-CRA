@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/The-algar/OC-P14-REACT-MODALE/blob/master/src/lib/components/assets/modale.JPG?raw=true" alt="Preview of the Modal component" /></p>
 
-# React Modal: A Simple and Customizable Component with Animation
+# React Modal: A simple react component modal for the OC P14 Whealth Health project
 
 ### Overview
 The React Modal is a customizable component that renders a pre-formatted modal for use in React projects. This component offers several features and options, such as: 
