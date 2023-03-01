@@ -60,7 +60,7 @@ This will display the Modal component:
         animation={true}
         closeButton={true}
     >
-        <p>Your modal message here!</p>	      
+        <p>Customize the modal and message here!</p>	      
     </Modal>
 )}
 
