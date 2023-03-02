@@ -1,5 +1,3 @@
-"use strict";
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -15,7 +13,7 @@ var _useKeyPress = require("./useKeyPress");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const Modal = props => {
+const Modale = props => {
   (0, _useKeyPress.useKeyPress)('Escape', props.hideModal);
   return /*#__PURE__*/_react.default.createElement(_modal.ModalDiv, {
     style: props.styleModalBackground,
@@ -33,5 +31,5 @@ const Modal = props => {
   })));
 };
 
-var _default = Modal;
+var _default = Modale;
 exports.default = _default;

@@ -5,7 +5,7 @@ function App() {
     <AppWrapper>
       <AppHeader>
         <p>
-          A simple react component modal with custom layout and animation.
+          A simple react component modal for the OC P14 Whealth Health project.
         </p>
           <AppLink href="https://openclassrooms.com/fr/dashboard/paths#path-516" target="_blank" rel="noopener noreferrer">
           I learned React with OpenClassrooms'<br /> "Application Developer - JavaScript React" training

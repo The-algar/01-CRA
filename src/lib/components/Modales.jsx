@@ -4,7 +4,7 @@ import close from './assets/close.svg'
 import styled from 'styled-components';
 import { useKeyPress } from './useKeyPress'
 
-const Modal = (props) => {
+const Modale = (props) => {
   useKeyPress('Escape', (props.hideModal))
   return (
     <ModaleDiv style={props.styleModalBackground} onClick={props.hideModal} animation={props.animation}>
@@ -16,7 +16,7 @@ const Modal = (props) => {
   )
 }
 
-export default Modal
+export default Modale
 
 const ModaleDiv = styled.div`
   display: flex;
