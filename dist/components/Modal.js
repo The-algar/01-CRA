@@ -2,18 +2,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-
 var _react = _interopRequireDefault(require("react"));
-
 var _close = _interopRequireDefault(require("./assets/close.svg"));
-
 var _modal = require("./styles/modal");
-
 var _useKeyPress = require("./useKeyPress");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-const Modale = props => {
+const Modal = props => {
   (0, _useKeyPress.useKeyPress)('Escape', props.hideModal);
   return /*#__PURE__*/_react.default.createElement(_modal.ModalDiv, {
     style: props.styleModalBackground,
@@ -30,6 +24,5 @@ const Modale = props => {
     onClick: props.hideModal
   })));
 };
-
-var _default = Modale;
+var _default = Modal;
 exports.default = _default;

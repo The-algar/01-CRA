@@ -1,24 +1,6 @@
+import styled from 'styled-components'
 
-import React from 'react'
-import close from './assets/close.svg'
-import styled from 'styled-components';
-import { useKeyPress } from './useKeyPress'
-
-const Modale = (props) => {
-  useKeyPress('Escape', (props.hideModal))
-  return (
-    <ModaleDiv style={props.styleModalBackground} onClick={props.hideModal} animation={props.animation}>
-      <ModaleContent style={props.styleModal} animation={props.animation}>
-        <Content style={props.styleModalContent}>{props.children}</Content>
-        {props.closeButton && <IMG src={close} alt="close" onClick={props.hideModal} />}
-      </ModaleContent>
-    </ModaleDiv>
-  )
-}
-
-export default Modale
-
-const ModaleDiv = styled.div`
+export const ModalDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +27,7 @@ const ModaleDiv = styled.div`
     }
   }
 `
-const ModaleContent = styled.div`
+export const ModalContent = styled.div`
   width: auto;
   height: auto;
   position: absolute;
@@ -72,7 +54,7 @@ const ModaleContent = styled.div`
     }
   }
 `
-const Content = styled.div`
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +63,7 @@ const Content = styled.div`
   color: black;
   line-height: 1.5rem;
 `
-const IMG = styled.img`
+export const IMG = styled.img`
   position: absolute;
   top: -0.8rem;
   right: -0.8rem;
@@ -89,4 +71,3 @@ const IMG = styled.img`
   height: 1.6rem;
   cursor: pointer;
 `
-
