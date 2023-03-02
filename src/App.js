@@ -1,11 +1,9 @@
-import Logo from './lib/components/Logo';
 import styled from 'styled-components';
 
 function App() {
   return (
     <AppWrapper>
       <AppHeader>
-        <Logo alt="logo" /> {/* width={100} height={100}  */}
         <p>
           A simple react component modal with custom layout and animation.
         </p>
