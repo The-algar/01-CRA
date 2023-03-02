@@ -1,19 +1,22 @@
+
 import React from 'react'
 import close from './assets/close.svg'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { useKeyPress } from './useKeyPress'
 
-const Modale = (props) => {
+const Modal = (props) => {
+  useKeyPress('Escape', (props.hideModal))
   return (
-    <ModaleDiv style={props.styleModaleBackground}>
-      <ModaleContent style={props.styleModale}>
-        <Content style={props.styleModaleContent}>{props.content}</Content>
-        <IMG src={close} alt="close" onClick={props.hideModale} />
+    <ModaleDiv style={props.styleModalBackground} onClick={props.hideModal} animation={props.animation}>
+      <ModaleContent style={props.styleModal} animation={props.animation}>
+        <Content style={props.styleModalContent}>{props.children}</Content>
+        {props.closeButton && <IMG src={close} alt="close" onClick={props.hideModal} />}
       </ModaleContent>
     </ModaleDiv>
   )
 }
 
-export default Modale
+export default Modal
 
 const ModaleDiv = styled.div`
   display: flex;
